@@ -20,5 +20,11 @@ public class LoginPage extends ProjectSpecificMethods {
 		return new InventoryPage();
 	}
 	
+
+	public DashboardPage clickLoginBtn2() {
+		click(locateElement(Locators.ID, "login-button"));
+		return new DashboardPage();
+	
+	}
 	
 }

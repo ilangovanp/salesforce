@@ -12,7 +12,7 @@ public class TC001_VerifyLogin extends ProjectSpecificMethods {
 	public void beforeTest() {
 		testcaseName = "VerifyLogin";
 		testDescription = "Verify Login functionality with positive data";
-		authors = "Karthikeyan";
+		authors = "ilangovan";
 		category = "Smoke";
 	}
 	
@@ -21,8 +21,8 @@ public class TC001_VerifyLogin extends ProjectSpecificMethods {
 		new LoginPage()
 		.enterUsername("standard_user")
 		.enterPassword("secret_sauce")
-		.clickLoginBtn()
-		.validateInventoryPageUrl();
+		.clickLoginBtn2().clickprofile();
+		
 	}	
 
 }
